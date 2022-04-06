@@ -56,8 +56,16 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey and started freelancing', },
+  { year: 2016, text: 'Taught myself how to code', },
+  { year: 2017, text: 'Started freelancing', },
   { year: 2019, text: 'Landed 1st Web Developer Job', },
-  { year: 2021, text: 'Finishes Web Dev Full Stack Bootcamp', },
+  { year: 2021, text: 'Finished Web Dev Full Stack Bootcamp', },
   { year: 2022, text: 'Started my own platform', },
+];
+
+export const AcomplishmentsData = [
+  { number: 20, text: 'Open Source Projects'},
+  { number: 1000, text: 'Students', },
+  { number: 1900, text: 'Github Followers', },
+  { number: 5000, text: 'Github Stars', }
 ];

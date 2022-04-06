@@ -54,7 +54,7 @@ const Timeline = () => {
         to practice my development skills and enroll in courses in related 
         topics that help me to grow as a developer.
       </SectionText>
-      <CarouselContainer ref={carouselRef}>
+      <CarouselContainer ref={carouselRef} onScroll={e => handleScroll()}>
         <Fragment>
           {TimeLineData.map(({year, text},index)=>(
             <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
@@ -97,6 +97,9 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
+                <CarouselItemText>
+                  {text}
+                </CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
             ))
